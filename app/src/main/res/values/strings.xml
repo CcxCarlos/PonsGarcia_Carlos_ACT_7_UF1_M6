@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">PonsGarcia_Carlos_ACT_7_UF1_M6</string>
+    <string name="ic_next">Next</string>
+    <string name="ic_back">back</string>
+    <string name="on">ON</string>
+    <string name="off">OFF</string>
+    <string name="tema">Tema Oscur</string>
+</resources>

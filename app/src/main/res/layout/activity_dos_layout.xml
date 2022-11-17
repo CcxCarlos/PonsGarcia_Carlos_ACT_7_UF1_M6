@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="0,1,2"
+    tools:context=".DosLayoutActivity">
+
+    <TableRow>
+
+        <Switch
+            android:id="@+id/switchButtonDos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tema"
+            android:switchPadding="10dp"
+            android:layout_span="3"
+            android:layout_gravity="right"
+            android:textColor="@color/blue"/>
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txtDos"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-black"
+            android:paddingBottom="40dp"
+            android:paddingTop="50dp"
+            android:text="Dos Layouts"
+            android:textSize="30dp"
+            android:layout_span="3"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:id="@+id/txtDos2"
+            android:text="Celda 1.1"
+            android:textAlignment="center"
+            android:padding="10dp"
+            android:textSize="20dp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/txtDos3"
+            android:text="Celda 1.2"
+            android:textAlignment="center"
+            android:padding="10dp"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/txtDos4"
+            android:text="Celda 1.3"
+            android:textAlignment="center"
+            android:padding="10dp"
+            android:textSize="20dp" />
+    </TableRow>
+    <TableRow>
+
+        <TextView
+            android:id="@+id/txtDos5"
+            android:text="Celda 2.1"
+            android:textAlignment="center"
+            android:padding="10dp"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/txtDos6"
+            android:text="Celda 2.2"
+            android:textAlignment="center"
+            android:padding="10dp"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/txtDos7"
+            android:text="Celda 2.3"
+            android:textAlignment="center"
+            android:padding="10dp"
+            android:textSize="20dp" />
+    </TableRow>
+
+
+    <include layout="@layout/activity_dos_layout2"/>
+
+
+</TableLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LinearLayoutActivity">
+
+    <Switch
+        android:id="@+id/switchButtonLinear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tema"
+        android:switchPadding="10dp"
+        android:layout_gravity="right"
+        android:textColor="@color/blue"/>
+    <TextView
+        android:id="@+id/txtLinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Linear Layout"
+        android:textAlignment="center"
+        android:textSize="30dp" />
+
+    <ImageButton
+        android:id="@+id/imgLinear"
+        android:layout_width="238dp"
+        android:layout_height="279dp"
+        android:background="@null"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/ccximg"
+        android:visibility="invisible"/>
+
+    <include layout="@layout/activity_linear2_layout"></include>
+
+</LinearLayout>

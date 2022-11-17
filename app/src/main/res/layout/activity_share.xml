@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShareActivity">
+
+    <Switch
+        android:id="@+id/switchButtonShare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tema"
+        android:layout_alignParentRight="true"
+        android:switchPadding="10dp"
+        android:layout_span="3"
+        android:textColor="@color/blue"></Switch>
+
+    <TextView
+        android:id="@+id/txtShare"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Share"
+        android:textAlignment="center"
+        android:textSize="30dp" />
+
+    <ImageView
+        android:id="@+id/imgShare"
+        android:layout_width="211dp"
+        android:layout_height="245dp"
+        android:layout_below="@id/txtShare"
+        android:layout_centerHorizontal="true"
+        android:background="@null"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/ccximg"
+        android:visibility="invisible"/>
+
+    <ImageButton
+        android:id="@+id/buttonShareRotateRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtShare"
+        android:layout_marginTop="168dp"
+        android:layout_toRightOf="@id/imgShare"
+        android:background="@null"
+        android:src="@drawable/ic_rotate_right"
+        android:onClick="changeRotation"/>
+
+    <ImageButton
+        android:id="@+id/buttonShareRotateLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtShare"
+        android:layout_marginTop="168dp"
+        android:layout_toLeftOf="@id/imgShare"
+        android:background="@null"
+        android:src="@drawable/ic_rotate_left"
+        android:onClick="changeRotation"/>
+
+    <ImageButton
+        android:id="@+id/buttonShareLayoutBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="switchAct"
+        android:layout_below="@id/imgShare"
+        android:layout_marginTop="100dp"
+        android:contentDescription="@string/ic_back"
+        android:background="@null"
+        android:src="@drawable/ic_arrow_back" />
+
+    <ToggleButton
+        android:id="@+id/toggleButtonSharePlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/toggle_style_share"
+        android:layout_below="@id/imgShare"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textOff="@null"
+        android:textOn="@null"/>
+
+    <ToggleButton
+        android:id="@+id/toggleButtonShare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/toggle_style"
+        android:layout_below="@id/toggleButtonSharePlay"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/cian"
+        android:textOff="@string/off"
+        android:textOn="@string/on" />
+
+    <ImageButton
+        android:id="@+id/buttonShareLayoutForward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="switchAct"
+        android:layout_below="@id/imgShare"
+        android:layout_marginTop="100dp"
+        android:layout_alignParentRight="true"
+        android:contentDescription="@string/ic_next"
+        android:background="@null"
+        android:src="@drawable/ic_arrow_forward" />
+
+    <include layout="@layout/activity_share2"></include>
+
+</RelativeLayout>

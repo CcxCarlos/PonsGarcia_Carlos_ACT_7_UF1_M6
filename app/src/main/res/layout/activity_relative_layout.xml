@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RelativeLayoutActivity">
+
+    <Switch
+        android:id="@+id/switchButtonRelative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tema"
+        android:layout_alignParentRight="true"
+        android:switchPadding="10dp"
+        android:layout_span="3"
+        android:textColor="@color/blue"></Switch>
+
+    <TextView
+        android:id="@+id/txtRelative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Relative Layout"
+        android:textAlignment="center"
+        android:textSize="30dp" />
+
+    <ImageButton
+        android:id="@+id/imgRelative"
+        android:layout_width="211dp"
+        android:layout_height="245dp"
+        android:layout_below="@id/txtRelative"
+        android:layout_centerHorizontal="true"
+        android:background="@null"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/ccximg"
+        android:visibility="invisible"/>
+
+    <ImageButton
+        android:id="@+id/buttonRelativeLayoutBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="switchAct"
+        android:layout_below="@id/imgRelative"
+        android:layout_marginTop="150dp"
+        android:contentDescription="@string/ic_back"
+        android:background="@null"
+        android:src="@drawable/ic_arrow_back" />
+
+    <ToggleButton
+        android:id="@+id/toggleButtonRelative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/toggle_style"
+        android:layout_below="@id/imgRelative"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180dp"
+        android:textColor="@color/cian"
+        android:textOff="@string/off"
+        android:textOn="@string/on" />
+
+    <ImageButton
+        android:id="@+id/buttonRelativeLayoutForward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="switchAct"
+        android:layout_below="@id/imgRelative"
+        android:layout_marginTop="150dp"
+        android:layout_alignParentRight="true"
+        android:contentDescription="@string/ic_next"
+        android:background="@null"
+        android:src="@drawable/ic_arrow_forward" />
+</RelativeLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="0,1,2"
+    tools:context=".TableLayoutActivity">
+
+    <TableRow>
+        <Switch
+            android:id="@+id/switchButtonTable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tema"
+            android:layout_gravity="right"
+            android:switchPadding="10dp"
+            android:layout_span="3"
+            android:textColor="@color/blue"></Switch>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txtTable"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-black"
+            android:paddingBottom="50dp"
+            android:paddingTop="70dp"
+            android:text="Table Layout"
+            android:textSize="30dp"
+            android:layout_span="3"/>
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/txtTable2"
+            android:text="Celda 1.1"
+            android:textAlignment="center"
+            android:padding="10dp"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/txtTable3"
+            android:text="Celda 1.2"
+            android:textAlignment="center"
+            android:padding="10dp"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/txtTable4"
+            android:text="Celda 1.3"
+            android:textAlignment="center"
+            android:padding="10dp"
+            android:textSize="20sp" />
+    </TableRow>
+    <TableRow>
+
+        <TextView
+            android:id="@+id/txtTable5"
+            android:text="Celda 2.1"
+            android:textAlignment="center"
+            android:padding="10dp"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/txtTable6"
+            android:text="Celda 2.2"
+            android:textAlignment="center"
+            android:padding="10dp"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/txtTable7"
+            android:text="Celda 2.3"
+            android:textAlignment="center"
+            android:padding="10dp"
+            android:textSize="20dp" />
+    </TableRow>
+    <TableRow>
+
+        <ImageButton
+            android:id="@+id/imgTable"
+            android:layout_width="218dp"
+            android:layout_height="293dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_span="3"
+            android:background="@null"
+            android:paddingTop="40dp"
+            android:paddingBottom="40dp"
+            android:src="@drawable/ccximg"
+            android:visibility="invisible" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/buttonTableLayoutBack"
+            android:layout_gravity="left"
+            android:layout_span="1"
+            android:onClick="switchAct"
+            android:contentDescription="@string/ic_back"
+            android:background="@null"
+            android:src="@drawable/ic_arrow_back" />
+
+        <ToggleButton
+            android:id="@+id/toggleButtonTable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/toggle_style"
+            android:textColor="@color/cian"
+            android:textOff="@string/off"
+            android:textOn="@string/on"
+            android:layout_gravity="center" />
+
+        <ImageButton
+            android:id="@+id/buttonTableLayoutForward"
+            android:layout_gravity="right"
+            android:layout_span="1"
+            android:background="@null"
+            android:contentDescription="@string/ic_next"
+            android:onClick="switchAct"
+            android:src="@drawable/ic_arrow_forward" />
+    </TableRow>
+
+</TableLayout>

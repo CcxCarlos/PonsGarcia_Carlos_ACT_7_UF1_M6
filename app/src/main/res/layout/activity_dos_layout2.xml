@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DosLayoutActivity">
+
+    <ImageButton
+        android:id="@+id/imgDos"
+        android:layout_width="190dp"
+        android:layout_height="241dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@null"
+        android:src="@drawable/ccximg"
+        android:visibility="invisible"/>
+
+    <ImageButton
+        android:id="@+id/buttonDosLayoutBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="switchAct"
+        android:layout_below="@id/imgDos"
+        android:contentDescription="@string/ic_back"
+        android:layout_marginTop="40dp"
+        android:background="@null"
+        android:src="@drawable/ic_arrow_back" />
+
+    <ImageButton
+        android:id="@+id/buttonDosLayoutForward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgDos"
+        android:layout_alignParentRight="true"
+        android:contentDescription="@string/ic_next"
+        android:onClick="switchAct"
+        android:layout_marginTop="40dp"
+        android:background="@null"
+        android:src="@drawable/ic_arrow_forward" />
+
+    <ToggleButton
+        android:id="@+id/toggleButtonDos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_below="@id/imgDos"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/toggle_style"
+        android:textColor="@color/cian"
+        android:textOff="@string/off"
+        android:textOn="@string/on" />
+</RelativeLayout>

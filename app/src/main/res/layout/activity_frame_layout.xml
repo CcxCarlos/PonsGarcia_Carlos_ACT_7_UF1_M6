@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FrameLayoutActivity">
+
+    <TextView
+        android:id="@+id/txtFrame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif-black"
+        android:text="Frame Layout"
+        android:textSize="30dp" />
+
+    <ImageButton
+        android:id="@+id/imgFrame"
+        android:layout_width="237dp"
+        android:layout_height="269dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@null"
+        style="?android:borderlessButtonStyle"
+        android:layout_marginTop="180dp"
+        android:src="@drawable/ccximg"
+        android:visibility="invisible"/>
+
+    <ImageButton
+        android:id="@+id/buttonFrameLayoutBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:onClick="switchAct"
+        android:layout_marginTop="550dp"
+        android:contentDescription="@string/ic_back"
+        android:background="@null"
+        android:src="@drawable/ic_arrow_back" />
+
+    <ImageButton
+        android:id="@+id/buttonFrameLayoutForward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:onClick="switchAct"
+        android:layout_marginTop="550dp"
+        android:contentDescription="@string/ic_next"
+        android:background="@null"
+        android:src="@drawable/ic_arrow_forward" />
+
+    <ToggleButton
+        android:id="@+id/toggleButtonFrame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="580dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/toggle_style"
+        android:textColor="@color/cian"
+        android:textOff="@string/off"
+        android:textOn="@string/on" />
+
+    <Switch
+        android:id="@+id/switchButtonFrame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tema"
+        android:switchPadding="10dp"
+        android:layout_gravity="right"
+        android:textColor="@color/blue"></Switch>
+
+</FrameLayout>
